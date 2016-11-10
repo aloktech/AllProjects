@@ -1,0 +1,13 @@
+account_id
+created_at
+created_by
+created_by_name
+description
+guid
+id
+is_deleted
+name
+thumbnail_etag
+updated_at
+updated_by
+updated_by_name

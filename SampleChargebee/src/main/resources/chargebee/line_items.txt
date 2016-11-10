@@ -1,0 +1,28 @@
+{
+    "amount": 1000,
+    "date_from": 1471517199,
+    "date_to": 1471517199,
+    "description": "Support charge",
+    "discount_amount": 0,
+    "entity_type": "adhoc",
+    "id": "li_1mxK5qKPuE4CkV3I5V",
+    "is_taxed": false,
+    "item_level_discount_amount": 0,
+    "object": "line_item",
+    "quantity": 1,
+    "tax_amount": 0,
+    "unit_amount": 1000
+}
+amount
+date_from
+date_to
+description
+discount_amount
+entity_type
+id
+is_taxed
+item_level_discount_amount
+object
+quantity
+tax_amount
+unit_amount

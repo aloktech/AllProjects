@@ -1,0 +1,26 @@
+{
+  "card_type": "visa",
+  "customer_id": "cbdemo_sir",
+  "expiry_month": 10,
+  "expiry_year": 2022,
+  "first_name": "Richard",
+  "gateway": "chargebee",
+  "iin": "401288",
+  "last4": "1881",
+  "last_name": "Fox",
+  "masked_number": "************1881",
+  "object": "card",
+  "status": "valid"
+}
+card_type
+customer_id
+expiry_month
+expiry_year
+first_name
+gateway
+iin
+last4
+last_name
+masked_number
+object
+status

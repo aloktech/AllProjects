@@ -1,0 +1,13 @@
+{
+    "CheckAggregatedInAggregator": {
+        "data": [{
+                "column_index": 1,
+                "path": "element_type.value.include_list.value",
+                "xpath": "/element_type/value/include_list/value[*]"
+            }, {
+                "column_index": 2,
+                "path": "element_type.value.exclude_list.value",
+                "xpath": "/element_type/value/exclude_list/value[*]"
+            }]
+    }
+}

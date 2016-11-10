@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.customerviewer">
+    <module_version install_time="1475149138941" last="true" origin="installer" specification_version="1.2">
+        <file crc="3181083085" name="config/Modules/org-netbeans-modules-customerviewer.xml"/>
+        <file crc="4235735614" name="modules/org-netbeans-modules-customerviewer.jar"/>
+    </module_version>
+</module>

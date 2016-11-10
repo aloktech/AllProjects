@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.imos.cs</groupId>
+    <artifactId>SampleCheckstyle</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--<checkstyle.config.location>${basedir}/config/checkstyle-configuration.xml</checkstyle.config.location>-->  
+        <!--<checkstyle.config.location>${basedir}/checkstyle/checkstyle-configuration.xml</checkstyle.config.location>-->  
+        <!--<checkstyle.config.location>${basedir}/checkstyle-configuration.xml</checkstyle.config.location>-->  
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.8</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>1.48</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <!--            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
+                <executions>
+                    <execution>
+                        <id>verify-style</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <logViolationsToConsole>false</logViolationsToConsole>
+                    <checkstyleRules>
+                        <module name="Checker">
+                            Annotation
+                            
+                            Following interprets the header file as regular expressions. 
+                            <module name="RegexpHeader"/>                                
+                            
+                            Checks for Headers                                
+                            See http://checkstyle.sf.net/config_header.html   
+                            <!--                            <module name="Header">                            
+                                The follow property value demonstrates the ability     
+                                to have access to ANT properties. In this case it uses 
+                                the ${basedir} property to allow Checkstyle to be run  
+                                from any directory within a project. See property      
+                                expansion,                                             
+                                http://checkstyle.sf.net/config.html#properties        
+                                <property                                              
+                                    name="headerFile"                                  
+                                    value="${basedir}/java.header"/>                   
+                            </module> -->
+                            
+                            Checks for Size Violations.                    
+                            See http://checkstyle.sf.net/config_sizes.html 
+                            <module name="FileLength">
+                                <property name="max" value="3500" />
+                                <property name="fileExtensions" value="java"/>
+                            </module>
+                            
+ 
+                            Checks for whitespace                               
+                            See http://checkstyle.sf.net/config_whitespace.html 
+                            <module name="FileTabCharacter"/>
+ 
+                            <module name="TreeWalker">
+                                
+                                Checks for imports                              
+                                See http://checkstyle.sf.net/config_import.html 
+                                <module name="AvoidStarImport"/>
+                                <module name="IllegalImport"/>  defaults to sun.* packages 
+                                <module name="RedundantImport"/>
+                                <module name="UnusedImports"/>
+                            
+                            
+                                Checks for Naming Conventions.                  
+                                See http://checkstyle.sf.net/config_naming.html 
+                                <module name="ConstantName"/>
+                                <module name="LocalFinalVariableName"/>
+                                <module name="LocalVariableName"/>
+                                <module name="MemberName"/>
+                                <module name="MethodName"/>
+                                <module name="PackageName"/>
+                                <module name="ParameterName"/>
+                                <module name="StaticVariableName"/>
+                                <module name="TypeName"/> 
+                            
+                                Checks for Javadoc comments.                     
+                                See http://checkstyle.sf.net/config_javadoc.html 
+                                <module name="JavadocMethod"/>
+                                <module name="JavadocType"/>
+                                <module name="JavadocVariable"/>
+                                <module name="JavadocStyle"/> 
+                                
+                                Checks for blocks. You know, those {}'s         
+                                See http://checkstyle.sf.net/config_blocks.html 
+                                <module name="AvoidNestedBlocks"/>
+                                <module name="EmptyBlock"/>
+                                <module name="EmptyCatchBlock">
+                                    <property name="exceptionVariableName" value="expected|ignore"/>
+                                </module>
+                                <module name="NeedBraces"/>
+                                <module name="RightCurly"/>
+                            
+                                Checks for Naming Conventions.                  
+                                See http://checkstyle.sf.net/config_naming.html 
+                                <module name="ConstantName"/>
+                                <module name="LocalFinalVariableName"/>
+                                <module name="LocalVariableName"/>
+                                <module name="MemberName"/>
+                                <module name="MethodName"/>
+                                <module name="PackageName"/>
+                                <module name="ParameterName"/>
+                                <module name="StaticVariableName"/>
+                                <module name="TypeName">
+                                    <property name="format" value="^_?[A-Z][a-zA-Z0-9]*$"/>
+                                </module>
+                                
+                                Checks for imports                              
+                                See http://checkstyle.sf.net/config_import.html 
+                                <module name="AvoidStarImport"/>
+                                <module name="IllegalImport"/>  defaults to sun.* packages 
+                                <module name="RedundantImport"/>
+                                <module name="UnusedImports"/>
+                                
+                                
+                                Checks for Size Violations.                    
+                                See http://checkstyle.sf.net/config_sizes.html 
+                                <!--                                                                <module name="FileLength">
+                                    <property name="max" value="3500" />
+                                    <property name="fileExtensions" value="java"/>
+                                </module>-->
+                                <module name="LineLength">
+                                    <property name="max" value="110"/>
+                                </module>
+                                <module name="MethodLength"/>
+                                <module name="ParameterNumber"/>
+                                
+                                Checks for whitespace                               
+                                See http://checkstyle.sf.net/config_whitespace.html 
+                                <module name="EmptyForIteratorPad"/>
+                                <module name="GenericWhitespace"/>
+                                <module name="MethodParamPad"/>
+                                <module name="NoWhitespaceAfter"/>
+                                <module name="NoWhitespaceBefore"/>
+                                <module name="OperatorWrap"/>
+                                <module name="ParenPad"/>
+                                <module name="TypecastParenPad"/>
+                                <module name="WhitespaceAfter"/>
+                                <module name="WhitespaceAround"/>
+                                
+                                Modifier Checks                                    
+                                See http://checkstyle.sf.net/config_modifiers.html 
+                                <module name="ModifierOrder"/>
+                                <module name="RedundantModifier"/>
+
+
+                                Checks for common coding problems               
+                                See http://checkstyle.sf.net/config_coding.html 
+                                <module name="ArrayTrailingComma"/>
+                                <module name="AvoidInlineConditionals"/>
+                                <module name="EmptyStatement"/>
+                                <module name="EqualsHashCode"/>
+                                <module name="ExplicitInitialization"/>
+                                <module name="HiddenField"/>
+                                <module name="IllegalInstantiation"/>
+                                <module name="InnerAssignment"/>
+                                <module name="MagicNumber"/>
+                                <module name="MissingSwitchDefault"/>
+                                <module name="SimplifyBooleanExpression"/>
+                                <module name="SimplifyBooleanReturn"/>
+
+                                Checks for class design                         
+                                See http://checkstyle.sf.net/config_design.html 
+                                <module name="DesignForExtension"/>
+                                <module name="FinalClass"/>
+                                <module name="HideUtilityClassConstructor"/>
+                                <module name="InterfaceIsType"/>
+                                <module name="InnerTypeLast"/>
+                                <module name="VisibilityModifier"/>
+                                <module name="ThrowsCount">
+                                    <property name="max" value="2"/>
+                                </module>
+
+
+                                Miscellaneous other checks.                   
+                                See http://checkstyle.sf.net/config_misc.html 
+                                <module name="ArrayTypeStyle"/>
+                                <module name="FinalParameters"/>
+                                <module name="TodoComment">
+                                    <property name="format" value="(TODO)|(FIXME)"/>
+                                </module>
+                                <module name="UpperEll"/>
+                                
+                                Checks for Metrics                         
+                                See http://checkstyle.sf.net/config_design.html
+                                <module name="CyclomaticComplexity">
+                                    <property name="max" value="3"/>
+                                </module>
+                                <module name="ClassFanOutComplexity">
+                                    <property name="max" value="10"/>
+                                </module>
+                            </module>
+                        </module>
+                    </checkstyleRules>
+                    <!--<configLocation>checkstyle-configuration.xml</configLocation>-->
+                    <!--<configLocation>checkstyle.xml</configLocation>-->
+                    <!--<configLocation>${checkstyle.config.location}</configLocation>-->
+                    <!--<configLocation>/home/alok/Tools/netbeans8.1_workspace/SampleCheckstyle/checkstyle.xml</configLocation>-->
+                </configuration>
+            </plugin>
+            <!--            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <reportPlugins>
+                        <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>findbugs-maven-plugin</artifactId>
+                        </plugin>
+                    </reportPlugins>
+                </configuration>
+                <executions>
+                     Ensures that the XSLT transformation is run when the project is compiled. 
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+            <!--            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+                <version>1.0</version>
+                <configuration>
+                    <transformationSets>
+                        <transformationSet>
+                             Configures the source directory of XML files. 
+                            <dir>${project.build.directory}/findbugs</dir>
+                             Configures the directory in which the FindBugs report is written.
+                            <outputDir>${project.build.directory}/findbugs</outputDir>
+                             Selects the used stylesheet. 
+                             <stylesheet>fancy-hist.xsl</stylesheet> 
+                            <stylesheet>default.xsl</stylesheet>
+                            <stylesheet>plain.xsl</stylesheet>
+                            <stylesheet>fancy.xsl</stylesheet>
+                            <stylesheet>summary.xsl</stylesheet>
+                            <fileMappers>
+                                 Configures the file extension of the output files. 
+                                <fileMapper
+                                    implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>.html</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                    </transformationSets>
+                </configuration>
+                <executions>
+                     Ensures that the XSLT transformation is run when the project is compiled. 
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.google.code.findbugs</groupId>
+                        <artifactId>findbugs</artifactId>
+                        <version>2.0.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.6</version>
+                <configuration>
+                    <linkXref>true</linkXref>
+                    <sourceEncoding>utf-8</sourceEncoding>
+                    <minimumTokens>100</minimumTokens>
+                    <targetJdk>1.8</targetJdk>
+                </configuration>
+            </plugin>
+<!--            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.7.201606060606</version>
+            </plugin>-->
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.1.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>checkstyle</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+                <configuration>
+                    <configLocation>${project.build.directory}/checkstyle-rules.xml</configLocation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.6</version>
+<!--                <configuration>
+                    <rulesets>
+                         Two rule sets that come bundled with PMD 
+                        <ruleset>/rulesets/java/braces.xml</ruleset>
+                        <ruleset>/rulesets/java/naming.xml</ruleset>
+                    </rulesets>
+                </configuration>-->
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

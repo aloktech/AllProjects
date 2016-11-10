@@ -1,0 +1,14 @@
+{
+    "applied_amount": 1000,
+    "applied_at": 1471517199,
+    "txn_amount": 1000,
+    "txn_date": 1471517199,
+    "txn_id": "txn_1mxK5qKPuE4Cks3I5W",
+    "txn_status": "success"
+}
+applied_amount
+applied_at
+txn_amount
+txn_date
+txn_id
+txn_status

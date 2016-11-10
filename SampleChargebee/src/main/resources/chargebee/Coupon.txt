@@ -1,0 +1,30 @@
+{
+  "addon_constraint": "not_applicable",
+  "apply_discount_on": "not_applicable",
+  "apply_on": "invoice_amount",
+  "created_at": 1472451869,
+  "currency_code": "USD",
+  "discount_amount": 500,
+  "discount_type": "fixed_amount",
+  "duration_type": "forever",
+  "id": "sample_offer",
+  "name": "Sample Offer",
+  "object": "coupon",
+  "plan_constraint": "not_applicable",
+  "redemptions": 0,
+  "status": "active"
+}
+addon_constraint
+apply_discount_on
+apply_on
+created_at
+currency_code
+discount_amount
+discount_type
+duration_type
+id
+name
+object
+plan_constraint
+redemptions
+status

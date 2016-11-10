@@ -1,0 +1,10 @@
+{
+    "currency_code": "USD",
+    "next_billing_at": 1473252354,
+    "object": "subscription_estimate",
+    "status": "in_trial"
+}
+currency_code
+next_billing_at
+object
+status

@@ -1,0 +1,28 @@
+{
+  "charge_type": "recurring",
+  "currency_code": "USD",
+  "enabled_in_portal": true,
+  "id": "sms_pack",
+  "invoice_name": "sample data pack",
+  "name": "Sms Pack",
+  "object": "addon",
+  "period": 1,
+  "period_unit": "month",
+  "price": 200,
+  "status": "active",
+  "taxable": true,
+  "type": "on_off"
+}
+charge_type
+currency_code
+enabled_in_portal
+id
+invoice_name
+name
+object
+period
+period_unit
+price
+status
+taxable
+type

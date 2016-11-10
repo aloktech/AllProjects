@@ -1,0 +1,14 @@
+created_at
+created_by
+created_by_name
+file_name
+id
+is_deleted
+next_version
+package_name
+package_version_id
+project_id
+updated_at
+updated_by
+updated_by_name
+version

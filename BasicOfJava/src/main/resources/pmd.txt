@@ -1,0 +1,550 @@
+Unnecessary
+  UnnecessaryConversionTemporary
+  UnnecessaryReturn
+  UnnecessaryFinalModifier
+    xpath
+  UselessOverridingMethod
+  UselessOperationOnImmutable
+  UnusedNullCheckInEquals
+    xpath
+  UselessParentheses
+    xpath
+  UselessQualifiedThis
+    xpath
+8
+
+Controversial
+  UnnecessaryConstructor
+    xpath
+  NullAssignment
+  OnlyOneReturn
+  AssignmentInOperand
+  AtLeastOneConstructor
+    xpath
+  DontImportSun
+  SuspiciousOctalEscape
+  CallSuperInConstructor
+    xpath
+  UnnecessaryParentheses
+    xpath
+  DefaultPackage
+    xpath
+  DataflowAnomalyAnalysis
+  AvoidFinalLocalVariable
+    xpath
+  AvoidUsingShortType
+    xpath
+  AvoidUsingVolatile
+    xpath
+  AvoidUsingNativeCode
+    xpath
+  AvoidAccessibilityAlteration
+    xpath
+  DoNotCallGarbageCollectionExplicitly
+    xpath
+  OneDeclarationPerLine
+    xpath
+    version
+    strictMode
+  AvoidPrefixingMethodParameters
+    xpath
+  AvoidLiteralsInIfCondition
+    ignoreMagicNumbers
+    xpath
+    version
+  UseObjectForClearerAPI
+    xpath
+  UseConcurrentHashMap
+    xpath
+22
+
+Basic
+  JumbledIncrementer
+    xpath
+  ForLoopShouldBeWhileLoop
+    xpath
+  OverrideBothEqualsAndHashcode
+  DoubleCheckedLocking
+  ReturnFromFinallyBlock
+    xpath
+  UnconditionalIfStatement
+    xpath
+  BooleanInstantiation
+  CollapsibleIfStatements
+    xpath
+  ClassCastExceptionWithToArray
+    xpath
+  AvoidDecimalLiteralsInBigDecimalConstructor
+    xpath
+  MisplacedNullCheck
+    xpath
+  AvoidThreadGroup
+    xpath
+  BrokenNullCheck
+  BigIntegerInstantiation
+  AvoidUsingOctalValues
+  AvoidUsingHardCodedIP
+    pattern
+  CheckResultSet
+  AvoidMultipleUnaryOperators
+  ExtendsObject
+    xpath
+  CheckSkipResult
+  AvoidBranchingStatementAsLastInLoop
+  DontCallThreadRun
+    xpath
+  DontUseFloatTypeForLoopIndices
+    xpath
+  SimplifiedTernary
+    xpath
+24
+
+Clone Implementation
+  ProperCloneImplementation
+    xpath
+  CloneThrowsCloneNotSupportedException
+    xpath
+  CloneMethodMustImplementCloneable
+    xpath
+  CloneMethodReturnTypeMustMatchClassName
+    xpath
+  CloneMethodMustBePublic
+    xpath
+5
+
+Naming
+  ShortVariable
+    minimum
+    xpath
+  LongVariable
+    minimum
+    xpath
+  ShortMethodName
+    minimum
+    xpath
+  VariableNamingConventions
+  MethodNamingConventions
+  ClassNamingConventions
+  AbstractNaming
+    xpath
+    strict
+  AvoidDollarSigns
+  MethodWithSameNameAsEnclosingClass
+  SuspiciousHashcodeMethodName
+  SuspiciousConstantFieldName
+    xpath
+  SuspiciousEqualsMethodName
+    xpath
+  AvoidFieldNameMatchingTypeName
+  AvoidFieldNameMatchingMethodName
+  NoPackage
+    xpath
+  PackageCase
+    xpath
+  MisleadingVariableName
+    xpath
+  BooleanGetMethodName
+    xpath
+    checkParameterizedMethods
+  ShortClassName
+    minimum
+    xpath
+  GenericsNaming
+    xpath
+20
+
+Coupling
+  CouplingBetweenObjects
+  ExcessiveImports
+  LooseCoupling
+  LoosePackageCoupling
+  LawOfDemeter
+5
+
+Strict Exceptions
+  AvoidCatchingThrowable
+  SignatureDeclareThrowsException
+  ExceptionAsFlowControl
+  AvoidCatchingNPE
+    xpath
+  AvoidThrowingRawExceptionTypes
+    xpath
+  AvoidThrowingNullPointerException
+    xpath
+  AvoidRethrowingException
+    xpath
+  DoNotExtendJavaLangError
+    xpath
+  DoNotThrowExceptionInFinally
+    xpath
+  AvoidThrowingNewInstanceOfSameException
+    xpath
+  AvoidCatchingGenericException
+    xpath
+  AvoidLosingExceptionInformation
+    xpath
+12
+
+Android
+  CallSuperFirst
+    xpath
+  CallSuperLast
+    xpath
+  DoNotHardCodeSDCard
+    xpath
+3
+
+J2EE
+  UseProperClassLoader
+    xpath
+  MDBAndSessionBeanNamingConvention
+    xpath
+  RemoteSessionInterfaceNamingConvention
+    xpath
+  LocalInterfaceSessionNamingConvention
+    xpath
+  LocalHomeNamingConvention
+    xpath
+  RemoteInterfaceNamingConvention
+    xpath
+  DoNotCallSystemExit
+    xpath
+  StaticEJBFieldShouldBeFinal
+    xpath
+  DoNotUseThreads
+    xpath
+9
+
+Jakarta Commons Logging
+  UseCorrectExceptionLogging
+    xpath
+  ProperLogger
+    xpath
+    staticLoggerName
+  GuardDebugLogging
+  GuardLogStatement
+4
+
+Optimization
+  LocalVariableCouldBeFinal
+  MethodArgumentCouldBeFinal
+  AvoidInstantiatingObjectsInLoops
+  UseArrayListInsteadOfVector
+    xpath
+  SimplifyStartsWith
+    xpath
+  UseStringBufferForStringAppends
+  UseArraysAsList
+    xpath
+  AvoidArrayLoops
+    xpath
+  UnnecessaryWrapperObjectCreation
+  AddEmptyString
+    xpath
+  RedundantFieldInitializer
+  PrematureDeclaration
+12
+
+Comments
+  CommentRequired
+  CommentSize
+  CommentContent
+  CommentDefaultAccessModifier
+    regex
+4
+
+Unused Code
+  UnusedPrivateField
+  UnusedLocalVariable
+  UnusedPrivateMethod
+  UnusedFormalParameter
+  UnusedModifier
+5
+
+Code Size
+  NPathComplexity
+  ExcessiveMethodLength
+  ExcessiveParameterList
+  ExcessiveClassLength
+  CyclomaticComplexity
+  StdCyclomaticComplexity
+  ModifiedCyclomaticComplexity
+  ExcessivePublicCount
+  TooManyFields
+  NcssMethodCount
+  NcssTypeCount
+  NcssConstructorCount
+  TooManyMethods
+    maxmethods
+    xpath
+13
+
+String and StringBuffer
+  AvoidDuplicateLiterals
+  StringInstantiation
+  StringToString
+  InefficientStringBuffering
+  UnnecessaryCaseChange
+  UseStringBufferLength
+  AppendCharacterWithChar
+  ConsecutiveAppendsShouldReuse
+  ConsecutiveLiteralAppends
+  UseIndexOfChar
+  InefficientEmptyStringCheck
+  InsufficientStringBufferDeclaration
+  UselessStringValueOf
+  StringBufferInstantiationWithChar
+    xpath
+  UseEqualsToCompareStrings
+    xpath
+  AvoidStringBufferField
+    xpath
+16
+
+Import Statements
+  DuplicateImports
+  DontImportJavaLang
+  UnusedImports
+  ImportFromSamePackage
+  TooManyStaticImports
+    maximumStaticImports
+    xpath
+  UnnecessaryFullyQualifiedName
+6
+
+Security Code Guidelines
+  MethodReturnsInternalArray
+  ArrayIsStoredDirectly
+2
+
+Type Resolution
+  LooseCoupling
+  CloneMethodMustImplementCloneable
+  UnusedImports
+  SignatureDeclareThrowsException
+    IgnoreJUnitCompletely
+4
+
+Empty Code
+  EmptyCatchBlock
+    xpath
+    allowCommentedBlocks
+  EmptyIfStmt
+    xpath
+  EmptyWhileStmt
+    xpath
+  EmptyTryBlock
+    xpath
+  EmptyFinallyBlock
+    xpath
+  EmptySwitchStatements
+    xpath
+  EmptySynchronizedBlock
+    xpath
+  EmptyStatementNotInLoop
+    xpath
+  EmptyInitializer
+    xpath
+  EmptyStatementBlock
+    xpath
+  EmptyStaticInitializer
+    xpath
+11
+
+JUnit
+  JUnitStaticSuite
+    xpath
+  JUnitSpelling
+    xpath
+  JUnitAssertionsShouldIncludeMessage
+  JUnitTestsShouldIncludeAssert
+  TestClassWithoutTestCases
+  UnnecessaryBooleanAssertion
+    xpath
+  UseAssertEqualsInsteadOfAssertTrue
+    xpath
+  UseAssertSameInsteadOfAssertTrue
+    xpath
+  UseAssertNullInsteadOfAssertTrue
+    xpath
+  SimplifyBooleanAssertion
+    xpath
+  JUnitTestContainsTooManyAsserts
+    maximumAsserts
+    xpath
+  UseAssertTrueInsteadOfAssertEquals
+    xpath
+12
+
+Braces
+  IfStmtsMustUseBraces
+    xpath
+  WhileLoopsMustUseBraces
+    xpath
+  IfElseStmtsMustUseBraces
+    xpath
+  ForLoopsMustUseBraces
+    xpath
+4
+
+Java Logging
+  MoreThanOneLogger
+  LoggerIsNotStaticFinal
+    xpath
+  SystemPrintln
+    xpath
+  AvoidPrintStackTrace
+    xpath
+  GuardLogStatementJavaUtil
+  InvalidSlf4jMessageFormat
+6
+
+Finalizer
+  EmptyFinalizer
+    xpath
+  FinalizeOnlyCallsSuperFinalize
+    xpath
+  FinalizeOverloaded
+    xpath
+  FinalizeDoesNotCallSuperFinalize
+    xpath
+  FinalizeShouldBeProtected
+    xpath
+  AvoidCallingFinalize
+6
+
+Design
+  UseSingleton
+  UseUtilityClass
+  SimplifyBooleanReturns
+  SimplifyBooleanExpressions
+    xpath
+  SwitchStmtsShouldHaveDefault
+    xpath
+  AvoidDeeplyNestedIfStmts
+  AvoidReassigningParameters
+  SwitchDensity
+  ConstructorCallsOverridableMethod
+  AccessorClassGeneration
+  FinalFieldCouldBeStatic
+    xpath
+  CloseResource
+  NonStaticInitializer
+    xpath
+  DefaultLabelNotLastInSwitchStmt
+    xpath
+  NonCaseLabelInSwitchStatement
+    xpath
+  OptimizableToArrayCall
+    xpath
+  BadComparison
+    xpath
+  EqualsNull
+    xpath
+  ConfusingTernary
+  InstantiationToGetClass
+    xpath
+  IdempotentOperations
+  SimpleDateFormatNeedsLocale
+    xpath
+  ImmutableField
+  UseLocaleWithCaseConversions
+    xpath
+  AvoidProtectedFieldInFinalClass
+    xpath
+  AssignmentToNonFinalStatic
+  MissingStaticMethodInNonInstantiatableClass
+    xpath
+  AvoidSynchronizedAtMethodLevel
+    xpath
+  MissingBreakInSwitch
+    xpath
+  UseNotifyAllInsteadOfNotify
+    xpath
+  AvoidInstanceofChecksInCatchClause
+    xpath
+  AbstractClassWithoutAbstractMethod
+    xpath
+  SimplifyConditional
+    xpath
+  CompareObjectsWithEquals
+  PositionLiteralsFirstInComparisons
+    xpath
+  PositionLiteralsFirstInCaseInsensitiveComparisons
+    xpath
+  UnnecessaryLocalBeforeReturn
+  NonThreadSafeSingleton
+  SingleMethodSingleton
+  SingletonClassReturningNewInstance
+  UncommentedEmptyMethodBody
+    xpath
+  UncommentedEmptyConstructor
+    xpath
+    ignoreExplicitConstructorInvocation
+  AvoidConstantsInterface
+    xpath
+  UnsynchronizedStaticDateFormatter
+  PreserveStackTrace
+  UseCollectionIsEmpty
+  ClassWithOnlyPrivateConstructorsShouldBeFinal
+    xpath
+  EmptyMethodInAbstractClassShouldBeAbstract
+    xpath
+  SingularField
+  ReturnEmptyArrayRatherThanNull
+    xpath
+  AbstractClassWithoutAnyMethod
+    xpath
+  TooFewBranchesForASwitchStatement
+    minimumNumberCaseForASwitch
+    xpath
+  LogicInversion
+    xpath
+  UseVarargs
+    xpath
+  FieldDeclarationsShouldBeAtStartOfClass
+  GodClass
+  AvoidProtectedMethodInFinalClassNotExtending
+    xpath
+  ConstantsInInterface
+    ignoreIfHasMethods
+    xpath
+58
+
+JavaBeans
+  BeanMembersShouldSerialize
+  MissingSerialVersionUID
+    xpath
+2
+
+Migration
+  ReplaceVectorWithList
+    xpath
+  ReplaceHashtableWithMap
+    xpath
+  ReplaceEnumerationWithIterator
+    xpath
+  AvoidEnumAsIdentifier
+    xpath
+  AvoidAssertAsIdentifier
+    xpath
+  IntegerInstantiation
+    xpath
+  ByteInstantiation
+    xpath
+  ShortInstantiation
+    xpath
+  LongInstantiation
+    xpath
+  JUnit4TestShouldUseBeforeAnnotation
+    xpath
+  JUnit4TestShouldUseAfterAnnotation
+    xpath
+  JUnit4TestShouldUseTestAnnotation
+    xpath
+  JUnit4SuitesShouldUseSuiteAnnotation
+    xpath
+  JUnitUseExpected
+14
+
+287

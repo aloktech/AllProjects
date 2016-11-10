@@ -1,0 +1,16 @@
+building_element_ids
+created_at
+created_by
+created_by_name
+descr_params
+description
+id
+issue_elements
+name
+property_fix
+returned_elements
+rule_results_id
+status
+updated_at
+updated_by
+updated_by_name

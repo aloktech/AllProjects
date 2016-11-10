@@ -1,0 +1,14 @@
+created_at
+created_by
+created_by_name
+descriptor
+formal_params
+guid
+id
+rule_name
+s3_key
+updated_at
+updated_by
+updated_by_name
+vendor
+version

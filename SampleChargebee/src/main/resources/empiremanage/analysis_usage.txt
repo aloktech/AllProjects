@@ -1,0 +1,16 @@
+account_id
+analysis_name
+analyzed_elem_count
+created_at
+created_by
+created_by_name
+failed_elem_count
+file_name
+id
+pkg_version_number
+project_id
+project_name
+rule_count
+updated_at
+updated_by
+updated_by_name

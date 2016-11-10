@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.imos.sample</groupId>
+    <artifactId>AllProjects</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>BasicOfJava</module>
+        <module>SampleElasticSearch</module>
+        <module>SampleJUnit5</module>
+        <module>SampleNashorn</module>
+        <module>SampleS3</module>
+        <module>SampleChargebee</module>
+        <module>SampleDagger</module>
+        <module>SampleGuice</module>
+        <module>SampleHibernate</module>
+        <module>SampleSpark</module>
+        <module>SampleSpikeProject</module>
+        <module>SampleWeld</module>
+        <module>SampleWebApp</module>
+        <module>SampleJavaFX</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <name>AllProjects</name>
+</project>

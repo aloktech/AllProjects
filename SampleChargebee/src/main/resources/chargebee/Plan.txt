@@ -1,0 +1,36 @@
+{
+    "period": 1,
+    "period_unit": "month",
+    "taxable": false,
+    "description": "This plan has a 14-day trial period.",
+    "enabled_in_portal": true,
+    "invoice_name": "Plan - Hustle",
+    "currency_code": "USD",
+    "free_quantity": 0,
+    "price": 4900,
+    "trial_period_unit": "day",
+    "name": "Hustle",
+    "charge_model": "flat_fee",
+    "id": "cbdemo_hustle",
+    "trial_period": 14,
+    "enabled_in_hosted_pages": true,
+    "status": "active",
+    "object": "plan"
+}
+charge_model
+currency_code
+description
+enabled_in_hosted_pages
+enabled_in_portal
+free_quantity
+id
+invoice_name
+name
+object
+period
+period_unit
+price
+status
+taxable
+trial_period
+trial_period_unit

@@ -1,0 +1,9 @@
+account_id
+created_at
+created_by
+created_by_name
+id
+system_rules_id
+updated_at
+updated_by
+updated_by_name

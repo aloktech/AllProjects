@@ -1,0 +1,437 @@
+[
+  {
+    "moduleName": "AFNetworking",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2011–2016 Alamofire Software Foundation (http://alamofire.org/)"
+  },
+  {
+    "moduleName": "angular-animate",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014-2016 Google Inc."
+  },
+  {
+    "moduleName": "angular-drag-and-drop-lists",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014 Marcel Juenemann <marcel@juenemann.cc> Copyright (c) 2014-2016 Google Inc."
+  },
+  {
+    "moduleName": "angular-file-upload",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 danialfarid"
+  },
+  {
+    "moduleName": "angular-globalize-it",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014 kether667"
+  },
+  {
+    "moduleName": "angular-local-storage",
+    "licenseType": "mit",
+    "copyright": "Copyright 2013 Gregory Pike"
+  },
+  {
+    "moduleName": "angular-moment",
+    "licenseType": "mit",
+    "copyright": "Copyright (C) 2013, 2014, 2015, Uri Shaked <uri@urish.org>"
+  },
+  {
+    "moduleName": "angular-sanitize",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2010-2015 Google, Inc. http://angularjs.org"
+  },
+  {
+    "moduleName": "angular-touch",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2010-2015 Google, Inc. http://angularjs.org"
+  },
+  {
+    "moduleName": "angular-ui/bootstrap",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2012-2016 the AngularUI Team, https://github.com/organizations/angular-ui/teams/291112"
+  },
+  {
+    "moduleName": "angular-ui/ui-router",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013-2015 The AngularUI Team, Karsten Sperling"
+  },
+  {
+    "moduleName": "angular-ui/ui-scroll",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 Hill30 INC"
+  },
+  {
+    "moduleName": "angular-validation-match",
+    "licenseType": "mit",
+    "copyright": ""
+  },
+  {
+    "moduleName": "Aspectjrt 1.7.3",
+    "licenseType": "Eclipse Public License - v 1.0",
+    "copyright": "Copyright (c) 2014 CSC - IT Center for Science"
+  },
+  {
+    "moduleName": "AWPagedArray",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 Alek Åström"
+  },
+  {
+    "moduleName": "AWS SDK",
+    "licenseType": "Amazon",
+    "copyright": ""
+  },
+  {
+    "moduleName": "aws-java-sdk 1.7.13",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "aws-java-sdk-flow-build-tools 1.7.13",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "cglib-nodep 2.2",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "com.fasterxml.jackson.core:jackson-annotations",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "com.jayway.restassured:rest-assured (2.3.2)",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "com.nimbusds:nimbus-jose-jwt (2.10)",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "commons-codec:commons-codec (1.4)",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "commons-io 2.4",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "commons-io 2.4",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "DotNetZip",
+    "licenseType": "Microsoft Public License",
+    "copyright": "© 2006-2016 Microsoft"
+  },
+  {
+    "moduleName": "dumbster 1.6",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "DWF Toolkit",
+    "licenseType": "Autodesk",
+    "copyright": ""
+  },
+  {
+    "moduleName": "FDKeychain",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014 Reid Main"
+  },
+  {
+    "moduleName": "Font-Awesome",
+    "licenseType": "ofl-1.1, mit, cc-by-3.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "FontAwesomeKit",
+    "licenseType": "mit",
+    "copyright": "Copyright (C) 2013 Pride Chung"
+  },
+  {
+    "moduleName": "FrameAccessor",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2012 Alexey Denisov"
+  },
+  {
+    "moduleName": "Freemarker 2.3.20",
+    "licenseType": "BSD-style license",
+    "copyright": ""
+  },
+  {
+    "moduleName": "http-proxy",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) Nodejitsu 2013"
+  },
+  {
+    "moduleName": "jackson-annotations 2.4.1",
+    "licenseType": "Apache Software License v2.0 and LGPL 2.1",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jackson-core 2.4.1",
+    "licenseType": "Apache Software License v2.0 and LGPL 2.1",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jackson-core-asl",
+    "licenseType": "Apache Software License v2.0 and LGPL 2.1",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jackson-databind 2.4.1",
+    "licenseType": "Apache Software License v2.0 and LGPL 2.1",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jackson-module-jsonSchema 2.3.0",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "javax.inject 1.0",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "javax.ws.rs:javax.ws.rs-api (2.0)",
+    "licenseType": "GPL2 w/ CPE https://glassfish.java.net/public/CDDL+GPL_1_1.html",
+    "copyright": ""
+  },
+  {
+    "moduleName": "javax:javaee-web-api (7.0)",
+    "licenseType": "CDDL + GPLv2 with classpath exception http://glassfish.java.net/nonav/public/CDDL+GPL.html",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jax-rs 2.0",
+    "licenseType": "CDDL-1.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jedis",
+    "licenseType": "https://github.com/xetorthio/jedis",
+    "copyright": "Copyright (c) 2010 Jonathan Leibiusky"
+  },
+  {
+    "moduleName": "jersey-client 2.6",
+    "licenseType": "CDDL v1.0 and GPL v2",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jest",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "jQuery",
+    "licenseType": "mit",
+    "copyright": "Copyright 2014 jQuery Foundation and other contributors http://jquery.com/"
+  },
+  {
+    "moduleName": "json-schema-validator 2.2.5",
+    "licenseType": "LGPLv3 https://github.com/fge/json-schema-validator/blob/master/LICENSE",
+    "copyright": ""
+  },
+  {
+    "moduleName": "JSON.net",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2007 James Newton-King"
+  },
+  {
+    "moduleName": "jsonschema2pojo-core 0.4.2",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "lodash",
+    "licenseType": "mit",
+    "copyright": "Copyright 2012-2016 The Dojo Foundation <http://dojofoundation.org/> Based on Underscore.js, copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>"
+  },
+  {
+    "moduleName": "log4j 1.2.17",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "Log4net",
+    "licenseType": "Apache",
+    "copyright": ""
+  },
+  {
+    "moduleName": "logstash",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "main-bower-files",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 Christopher Knötschke cknoetschke@gmail.com"
+  },
+  {
+    "moduleName": "Mantle",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) GitHub, Inc. All rights reserved."
+  },
+  {
+    "moduleName": "MBProgressHUD",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2009-2015 Matej Bukovinski"
+  },
+  {
+    "moduleName": "minimist",
+    "licenseType": "mit",
+    "copyright": ""
+  },
+  {
+    "moduleName": "miredot",
+    "licenseType": "www.miredot.com/license",
+    "copyright": ""
+  },
+  {
+    "moduleName": "modernizr",
+    "licenseType": "mit",
+    "copyright": ""
+  },
+  {
+    "moduleName": "moment",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors"
+  },
+  {
+    "moduleName": "mysql-connector-java 5.1.32",
+    "licenseType": "GPL v2",
+    "copyright": ""
+  },
+  {
+    "moduleName": "mysql:mysql-connector-java: (5.1.32)",
+    "licenseType": "GPL v2",
+    "copyright": ""
+  },
+  {
+    "moduleName": "ngInfiniteScroll",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2012 Michelle Tilley"
+  },
+  {
+    "moduleName": "OpenCTM",
+    "licenseType": "http://sourceforge.net/p/openctm/code/HEAD/tree/trunk/LICENSE.txt",
+    "copyright": "Copyright (c) 2009-2010 Marcus Geelnard"
+  },
+  {
+    "moduleName": "OpenCTM",
+    "licenseType": "zlib",
+    "copyright": "Copyright (c) 2009-2010 Marcus Geelnard"
+  },
+  {
+    "moduleName": "org.codehaus.jackson:jackson-mapper-asl",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "org.glassfish.jersey.core (2.12)",
+    "licenseType": "CDDL + GPL License",
+    "copyright": ""
+  },
+  {
+    "moduleName": "org.hamcrest:hamcrest-core",
+    "licenseType": "New BSD License",
+    "copyright": ""
+  },
+  {
+    "moduleName": "org.json json 20140107",
+    "licenseType": "The Software shall be used for Good, not Evil.",
+    "copyright": ""
+  },
+  {
+    "moduleName": "Overcoat",
+    "licenseType": "mit",
+    "copyright": ""
+  },
+  {
+    "moduleName": "q",
+    "licenseType": "mit",
+    "copyright": "Copyright 2009–2014 Kristopher Michael Kowal. All rights reserved."
+  },
+  {
+    "moduleName": "RBCollectionViewInfoFolderLayout",
+    "licenseType": "mit",
+    "copyright": ""
+  },
+  {
+    "moduleName": "redis",
+    "licenseType": "BSD-style license",
+    "copyright": ""
+  },
+  {
+    "moduleName": "request",
+    "licenseType": "apache-2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "request-json",
+    "licenseType": "mit",
+    "copyright": "Copyright 2012 Cozy Cloud (contact@cozycloud.cc))"
+  },
+  {
+    "moduleName": "Require.js",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2010-2015, The Dojo Foundation"
+  },
+  {
+    "moduleName": "restangular",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013-2015 Martin Gontovnikas http://www.gon.to/"
+  },
+  {
+    "moduleName": "restler-q",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 Troupe"
+  },
+  {
+    "moduleName": "Revit SDK",
+    "licenseType": "Autodesk",
+    "copyright": ""
+  },
+  {
+    "moduleName": "Three.JS",
+    "licenseType": "mit",
+    "copyright": "Copyright © 2010-2016 three.js authors"
+  },
+  {
+    "moduleName": "tomcat-jdbc 8.0.9",
+    "licenseType": "Apache Software License v2.0",
+    "copyright": ""
+  },
+  {
+    "moduleName": "uglify-save-license",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2013 - 2014 Shinnosuke Watanabe"
+  },
+  {
+    "moduleName": "Underscore.js",
+    "licenseType": "mit",
+    "copyright": "Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/> Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>"
+  },
+  {
+    "moduleName": "VENTokenField",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014 Venmo"
+  },
+  {
+    "moduleName": "wiredep",
+    "licenseType": "mit",
+    "copyright": "Copyright (c) 2014 Stephen Sawchuk"
+  },
+  {
+    "moduleName": "Yajl",
+    "licenseType": "ISC",
+    "copyright": "Copyright (c) 2007-2014, Lloyd Hilaiel <me@lloyd.io>"
+  }
+]

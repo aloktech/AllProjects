@@ -1,0 +1,14 @@
+account_id
+created_at
+created_by
+created_by_name
+descriptor
+disabled
+id
+rule_count
+s3_key
+system_s3_key
+tag
+updated_at
+updated_by
+updated_by_name

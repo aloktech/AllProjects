@@ -1,0 +1,1 @@
+curl https://mixpanel.com/api/2.0/jql  -u {0}: --data-urlencode script@{1} | python -m json.tool

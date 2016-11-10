@@ -1,0 +1,4909 @@
+{
+    "nonpivot": {
+        "mappings": [{
+                "columnName": "Tags",
+                "columnIndex": 0,
+                "mandatory": true,
+                "jsonData": {
+                    "tags": ["$value"]
+                }
+            },
+            {
+                "columnName": "Template Version",
+                "columnIndex": 1,
+                "mandatory": true,
+                "jsonData": {
+                    "version": "$value"
+                }
+            },
+            {
+                "columnName": "Template Name",
+                "columnIndex": 2,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "name": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Template Description",
+                "columnIndex": 3,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "short_description": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Template Long Description",
+                "columnIndex": 4,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "long_description": "$value"
+                        }
+                    }
+                }
+            }]
+    },
+    "pivot": {
+        "key": "recipes",
+        "type": "array",
+        "mappings": [{
+                "columnName": "Rule Definition Name",
+                "columnIndex": 5,
+                "mandatory": true,
+                "jsonData": {
+                    "s3key": "$value"
+                }
+            },
+            {
+                "columnName": "Rule Name",
+                "columnIndex": 6,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "name": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Rule Short Description",
+                "columnIndex": 7,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "short_description": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Rule Long Description",
+                "columnIndex": 8,
+                "mandatory": true,
+                "jsonData": {
+                    "resources": {
+                        "en": {
+                            "long_description": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Element Types Include",
+                "columnIndex": 9,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Element Types Exclude",
+                "columnIndex": 10,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Types to Exclude (optional)",
+                "columnIndex": 11,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "exclude_list": {
+                            "value": ["$value"]
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "element_type_a_Include List",
+                "columnIndex": 12,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_type_a": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "element_type_a_exclude List",
+                "columnIndex": 13,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_type_a": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "element_type_b_Include List",
+                "columnIndex": 14,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_type_b": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "element_type_b_exclude List",
+                "columnIndex": 15,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_type_b": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Element Types Include",
+                "columnIndex": 16,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_aggregator": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Element Types Exclude",
+                "columnIndex": 17,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_aggregator": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Element Types Include",
+                "columnIndex": 18,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_aggregated": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Element Types Exclude",
+                "columnIndex": 19,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_aggregated": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Element Types Include",
+                "columnIndex": 20,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_spatial_structure": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Element Types Exclude",
+                "columnIndex": 21,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_spatial_structure": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Element Types Include",
+                "columnIndex": 22,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_equipment": {
+                            "value": {
+                                "include_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Element Types Exclude",
+                "columnIndex": 23,
+                "batypeConversion": true,
+                "jsonData": {
+                    "actualparams": {
+                        "element_types_equipment": {
+                            "value": {
+                                "exclude_list": {
+                                    "value": ["$value"]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Count From",
+                "columnIndex": 24,
+                "jsonData": {
+                    "actualparams": {
+                        "element_count": {
+                            "value": {
+                                "to": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Count To",
+                "columnIndex": 25,
+                "jsonData": {
+                    "actualparams": {
+                        "element_count": {
+                            "value": {
+                                "from": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Property Name",
+                "columnIndex": 26,
+                "jsonData": {
+                    "actualparams": {
+                        "property_name": {
+                            "value": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Property Value",
+                "columnIndex": 27,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "value": ["$value"]
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Unit",
+                "columnIndex": 28,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "unit": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Value_From",
+                "columnIndex": 29,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "value": {
+                                "from": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Unit_From",
+                "columnIndex": 30,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "value": {
+                                "from": {
+                                    "unit": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Value_To",
+                "columnIndex": 31,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "value": {
+                                "to": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Unit_To",
+                "columnIndex": 32,
+                "jsonData": {
+                    "actualparams": {
+                        "property_value": {
+                            "value": {
+                                "to": {
+                                    "unit": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_Operator_1",
+                "columnIndex": 33,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_Property_Name_1",
+                "columnIndex": 34,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_Value_1",
+                "columnIndex": 35,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_Unit_1",
+                "columnIndex": 36,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_From_Value_1",
+                "columnIndex": 37,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_From_Unit_1",
+                "columnIndex": 38,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_To_Value_1",
+                "columnIndex": 39,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Scope MPC_To_Unit_1",
+                "columnIndex": 40,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Operator_2",
+                "columnIndex": 41,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Property_Name_2",
+                "columnIndex": 42,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Value_2",
+                "columnIndex": 43,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Unit_2",
+                "columnIndex": 44,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Value_2",
+                "columnIndex": 45,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Unit_2",
+                "columnIndex": 46,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Value_2",
+                "columnIndex": 47,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Unit_2",
+                "columnIndex": 48,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Operator_3",
+                "columnIndex": 49,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Property_Name_3",
+                "columnIndex": 50,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Value_3",
+                "columnIndex": 51,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Unit_3",
+                "columnIndex": 52,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Value_3",
+                "columnIndex": 53,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Unit_3",
+                "columnIndex": 54,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Value_3",
+                "columnIndex": 55,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Unit_3",
+                "columnIndex": 56,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Operator_4",
+                "columnIndex": 57,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Property_Name_4",
+                "columnIndex": 58,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Value_4",
+                "columnIndex": 59,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Unit_4",
+                "columnIndex": 60,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Value_4",
+                "columnIndex": 61,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_From_Unit_4",
+                "columnIndex": 62,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Value_4",
+                "columnIndex": 63,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_To_Unit_4",
+                "columnIndex": 64,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Match",
+                "columnIndex": 65,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ScopeMPC_Formula",
+                "columnIndex": 66,
+                "jsonData": {
+                    "actualparams": {
+                        "scope_expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Operator_1",
+                "columnIndex": 67,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Property_Name_1",
+                "columnIndex": 68,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Value_1",
+                "columnIndex": 69,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Unit_1",
+                "columnIndex": 70,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Value_1",
+                "columnIndex": 71,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Unit_1",
+                "columnIndex": 72,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Value_1",
+                "columnIndex": 73,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Unit_1",
+                "columnIndex": 74,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Operator_2",
+                "columnIndex": 75,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Property_Name_2",
+                "columnIndex": 76,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Value_2",
+                "columnIndex": 77,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Unit_2",
+                "columnIndex": 78,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Value_2",
+                "columnIndex": 79,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Unit_2",
+                "columnIndex": 80,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Value_2",
+                "columnIndex": 81,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Unit_2",
+                "columnIndex": 82,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Operator_3",
+                "columnIndex": 83,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Property_Name_3",
+                "columnIndex": 84,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Value_3",
+                "columnIndex": 85,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Unit_3",
+                "columnIndex": 86,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Value_3",
+                "columnIndex": 87,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Unit_3",
+                "columnIndex": 88,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Value_3",
+                "columnIndex": 89,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Unit_3",
+                "columnIndex": 90,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Operator_4",
+                "columnIndex": 91,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Property_Name_4",
+                "columnIndex": 92,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Value_4",
+                "columnIndex": 93,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Unit_4",
+                "columnIndex": 94,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Value_4",
+                "columnIndex": 95,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_From_Unit_4",
+                "columnIndex": 96,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Value_4",
+                "columnIndex": 97,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_To_Unit_4",
+                "columnIndex": 98,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Match",
+                "columnIndex": 99,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "MPC_Formula",
+                "columnIndex": 100,
+                "jsonData": {
+                    "actualparams": {
+                        "expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Operator1",
+                "columnIndex": 101,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_PropertyName1",
+                "columnIndex": 102,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Value1",
+                "columnIndex": 103,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Unit1",
+                "columnIndex": 104,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromValue1",
+                "columnIndex": 105,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromUnit1",
+                "columnIndex": 106,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToValue1",
+                "columnIndex": 107,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToUnit1",
+                "columnIndex": 108,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Operator2",
+                "columnIndex": 109,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_PropertyName2",
+                "columnIndex": 110,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Value2",
+                "columnIndex": 111,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Unit2",
+                "columnIndex": 112,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromValue2",
+                "columnIndex": 113,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromUnit2",
+                "columnIndex": 114,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToValue2",
+                "columnIndex": 115,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToUnit2",
+                "columnIndex": 116,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Operator3",
+                "columnIndex": 117,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_PropertyName3",
+                "columnIndex": 118,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Value3",
+                "columnIndex": 119,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Unit3",
+                "columnIndex": 120,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromValue3",
+                "columnIndex": 121,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromUnit3",
+                "columnIndex": 122,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToValue3",
+                "columnIndex": 123,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToUnit3",
+                "columnIndex": 124,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Operator4",
+                "columnIndex": 125,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_PropertyName4",
+                "columnIndex": 126,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Value4",
+                "columnIndex": 127,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Unit4",
+                "columnIndex": 128,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromValue4",
+                "columnIndex": 129,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_FromUnit4",
+                "columnIndex": 130,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToValue4",
+                "columnIndex": 131,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_ToUnit4",
+                "columnIndex": 132,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Match",
+                "columnIndex": 133,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Spatial Structure Properties_Formula",
+                "columnIndex": 134,
+                "jsonData": {
+                    "actualparams": {
+                        "spatial_structure_expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Operator1",
+                "columnIndex": 135,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_PropertyName1",
+                "columnIndex": 136,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Value1",
+                "columnIndex": 137,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Unit1",
+                "columnIndex": 138,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromValue1",
+                "columnIndex": 139,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromUnit1",
+                "columnIndex": 140,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToValue1",
+                "columnIndex": 141,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToUnit1",
+                "columnIndex": 142,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Operator2",
+                "columnIndex": 143,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_PropertyName2",
+                "columnIndex": 144,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Value2",
+                "columnIndex": 145,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Unit2",
+                "columnIndex": 146,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromValue2",
+                "columnIndex": 147,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromUnit2",
+                "columnIndex": 148,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToValue2",
+                "columnIndex": 149,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToUnit2",
+                "columnIndex": 150,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Operator3",
+                "columnIndex": 151,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_PropertyName3",
+                "columnIndex": 152,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Value3",
+                "columnIndex": 153,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Unit3",
+                "columnIndex": 154,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromValue3",
+                "columnIndex": 155,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromUnit3",
+                "columnIndex": 156,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToValue3",
+                "columnIndex": 157,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToUnit3",
+                "columnIndex": 158,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Operator4",
+                "columnIndex": 159,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_PropertyName4",
+                "columnIndex": 160,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Value4",
+                "columnIndex": 161,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Unit4",
+                "columnIndex": 162,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromValue4",
+                "columnIndex": 163,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_FromUnit4",
+                "columnIndex": 164,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToValue4",
+                "columnIndex": 165,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_ToUnit4",
+                "columnIndex": 166,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Match",
+                "columnIndex": 167,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Equipment Properties_Formula",
+                "columnIndex": 168,
+                "jsonData": {
+                    "actualparams": {
+                        "equipment_expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Operator1",
+                "columnIndex": 169,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_PropertyName1",
+                "columnIndex": 170,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Value1",
+                "columnIndex": 171,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Unit1",
+                "columnIndex": 172,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromValue1",
+                "columnIndex": 173,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromUnit1",
+                "columnIndex": 174,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToValue1",
+                "columnIndex": 175,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToUnit1",
+                "columnIndex": 176,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Operator2",
+                "columnIndex": 177,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_PropertyName2",
+                "columnIndex": 178,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Value2",
+                "columnIndex": 179,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Unit2",
+                "columnIndex": 180,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromValue2",
+                "columnIndex": 181,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromUnit2",
+                "columnIndex": 182,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToValue2",
+                "columnIndex": 183,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToUnit2",
+                "columnIndex": 184,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Operator3",
+                "columnIndex": 185,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_PropertyName3",
+                "columnIndex": 186,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Value3",
+                "columnIndex": 187,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Unit3",
+                "columnIndex": 188,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromValue3",
+                "columnIndex": 189,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromUnit3",
+                "columnIndex": 190,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToValue3",
+                "columnIndex": 191,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToUnit3",
+                "columnIndex": 192,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Operator4",
+                "columnIndex": 193,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_PropertyName4",
+                "columnIndex": 194,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Value4",
+                "columnIndex": 195,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Unit4",
+                "columnIndex": 196,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromValue4",
+                "columnIndex": 197,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_FromUnit4",
+                "columnIndex": 198,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToValue4",
+                "columnIndex": 199,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_ToUnit4",
+                "columnIndex": 200,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Match",
+                "columnIndex": 201,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregator Properties_Formula",
+                "columnIndex": 202,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregator_expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Operator1",
+                "columnIndex": 203,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_PropertyName1",
+                "columnIndex": 204,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Value1",
+                "columnIndex": 205,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Unit1",
+                "columnIndex": 206,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromValue1",
+                "columnIndex": 207,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromUnit1",
+                "columnIndex": 208,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToValue1",
+                "columnIndex": 209,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToUnit1",
+                "columnIndex": 210,
+                "expressionIndex": 1,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Operator2",
+                "columnIndex": 211,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_PropertyName2",
+                "columnIndex": 212,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Value2",
+                "columnIndex": 213,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Unit2",
+                "columnIndex": 214,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromValue2",
+                "columnIndex": 215,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromUnit2",
+                "columnIndex": 216,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToValue2",
+                "columnIndex": 217,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToUnit2",
+                "columnIndex": 218,
+                "expressionIndex": 2,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Operator3",
+                "columnIndex": 219,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_PropertyName3",
+                "columnIndex": 220,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Value3",
+                "columnIndex": 221,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Unit3",
+                "columnIndex": 222,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromValue3",
+                "columnIndex": 223,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromUnit3",
+                "columnIndex": 224,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToValue3",
+                "columnIndex": 225,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToUnit3",
+                "columnIndex": 226,
+                "expressionIndex": 3,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Operator4",
+                "columnIndex": 227,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "operator": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_PropertyName4",
+                "columnIndex": 228,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_name": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Value4",
+                "columnIndex": 229,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Unit4",
+                "columnIndex": 230,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "unit": "$value"
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromValue4",
+                "columnIndex": 231,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_FromUnit4",
+                "columnIndex": 232,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "from": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToValue4",
+                "columnIndex": 233,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "value": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_ToUnit4",
+                "columnIndex": 234,
+                "expressionIndex": 4,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "conditions": {
+                                    "value": [{
+                                            "property_value": {
+                                                "value": {
+                                                    "to": {
+                                                        "unit": "$value"
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Match",
+                "columnIndex": 235,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "match": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Aggregated Properties_Formula",
+                "columnIndex": 236,
+                "jsonData": {
+                    "actualparams": {
+                        "aggregated_expression": {
+                            "value": {
+                                "formula": {
+                                    "value": "$value"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Code Level",
+                "columnIndex": 237,
+                "jsonData": {
+                    "actualparams": {
+                        "level": {
+                            "value": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "ratio_of_a_to_b",
+                "columnIndex": 238,
+                "jsonData": {
+                    "actualparams": {
+                        "ratio_of_a_to_b": {
+                            "value": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Threshold",
+                "columnIndex": 239,
+                "jsonData": {
+                    "actualparams": {
+                        "threshold": {
+                            "value": "$value"
+                        }
+                    }
+                }
+            },
+            {
+                "columnName": "Duplicate Rule",
+                "columnIndex": 240,
+                "jsonData": {
+                    "actualparams": {
+
+                    }
+                }
+            }]
+    }
+}

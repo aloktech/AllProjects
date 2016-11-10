@@ -1,0 +1,40 @@
+{
+  "allow_direct_debit": false,
+  "auto_collection": "on",
+  "card_status": "valid",
+  "company": "SaaS Me Tech",
+  "created_at": 1408450268,
+  "email": "ricky@example.com",
+  "excess_payments": 0,
+  "first_name": "Ricky",
+  "id": "cbdemo_ricky",
+  "last_name": "Roma",
+  "object": "customer",
+  "payment_method": {
+    "gateway": "chargebee",
+    "object": "payment_method",
+    "reference_id": "tok_2rprAVeyPuE5o142qXX",
+    "status": "valid",
+    "type": "card"
+  },
+  "phone": "909-389-7473",
+  "promotional_credits": 0,
+  "refundable_credits": 0,
+  "taxability": "taxable"
+}
+allow_direct_debit
+auto_collection
+card_status
+company
+created_at
+email
+excess_payments
+first_name
+id
+last_name
+object
+payment_method
+phone
+promotional_credits
+refundable_credits
+taxability

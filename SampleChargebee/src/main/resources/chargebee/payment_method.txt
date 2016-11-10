@@ -1,0 +1,12 @@
+{
+    "gateway": "chargebee",
+    "object": "payment_method",
+    "reference_id": "tok_1mxK5qKPuE4urL3IAw",
+    "status": "valid",
+    "type": "card"
+}
+gateway
+object
+reference_id
+status
+type

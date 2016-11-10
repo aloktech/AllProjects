@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.5" timestamp="2016-10-04T14:07:10.384">
+<file name="/home/alok/Tools/netbeans8.1_workspace/SampleProject/src/main/java/com/imos/sample/sampleproject/NewClass.java">
+<violation beginline="25" endline="25" begincolumn="16" endcolumn="16" rule="UnusedLocalVariable" ruleset="Unused Code" package="com.imos.sample.sampleproject" class="NewClass" method="main" variable="n" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'n'.
+</violation>
+<violation beginline="26" endline="26" begincolumn="13" endcolumn="16" rule="UnconditionalIfStatement" ruleset="Basic" package="com.imos.sample.sampleproject" class="NewClass" method="main" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/basic.html#UnconditionalIfStatement" priority="3">
+Do not use if statements that are always true or always false
+</violation>
+</file>
+</pmd>

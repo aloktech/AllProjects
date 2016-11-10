@@ -1,0 +1,41 @@
+{
+  "amount": 11900,
+  "amount_unused": 0,
+  "currency_code": "USD",
+  "customer_id": "cbdemo_shelley",
+  "date": 1463055077,
+  "gateway": "chargebee",
+  "id": "txn_IG5ryqoPuChdiu3E8h",
+  "id_at_gateway": "cb___dev__3Nl8F9dPsof5cs23",
+  "linked_invoices": [{
+    "applied_amount": 11900,
+    "applied_at": 1463055077,
+    "invoice_date": 1463055076,
+    "invoice_id": "DemoInv_101",
+    "invoice_status": "paid",
+    "invoice_total": 11900
+  }],
+  "linked_refunds": [],
+  "masked_card_number": "************4444",
+  "object": "transaction",
+  "payment_method": "card",
+  "status": "success",
+  "subscription_id": "cbdemo_shelley-sub",
+  "type": "payment"
+}
+amount
+amount_unused
+currency_code
+customer_id
+date
+gateway
+id
+id_at_gateway
+linked_invoices
+linked_refunds
+masked_card_number
+object
+payment_method
+status
+subscription_id
+type

@@ -1,0 +1,3 @@
+id
+permission_id
+role_id

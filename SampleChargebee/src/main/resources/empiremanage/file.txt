@@ -1,0 +1,12 @@
+created_at
+created_by
+created_by_name
+file_name
+id
+id_from_pkg
+occ_count
+package_version_id
+source_type
+updated_at
+updated_by
+updated_by_name

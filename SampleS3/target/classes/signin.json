@@ -1,0 +1,12 @@
+{
+    "@version": "1",
+    "@timestamp": "",
+    "system": {
+        "time": "",
+        "event": "signin"
+    },
+    "data": {
+        "user_id": 0,
+        "account_id": 6
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CBCC435",
+  "coupon_id": "sample_offer",
+  "coupon_set_name": "Launch Promotion",
+  "object": "coupon_code",
+  "status": "not_redeemed"
+}
+code
+coupon_id
+coupon_set_name
+object
+status

@@ -1,0 +1,12 @@
+{
+"company": "Acme Inc.",
+"first_name": "John",
+"last_name": "William",
+"object": "billing_address",
+"validation_status": "unknown"
+}
+company
+first_name
+last_name
+object
+validation_status

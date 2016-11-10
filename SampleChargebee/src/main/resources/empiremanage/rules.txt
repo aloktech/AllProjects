@@ -1,0 +1,14 @@
+account_rule_id
+actual_params
+analysis_id
+created_at
+created_by
+created_by_name
+description
+empty_param_count
+id
+name
+param_count
+updated_at
+updated_by
+updated_by_name

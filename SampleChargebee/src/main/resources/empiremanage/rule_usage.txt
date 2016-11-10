@@ -1,0 +1,13 @@
+analysis_usage_id
+analyzed_elem_count
+created_at
+created_by
+created_by_name
+failed_elem_count
+id
+rule_name
+system_rule_id
+system_rule_name
+updated_at
+updated_by
+updated_by_name

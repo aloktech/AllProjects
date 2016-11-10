@@ -1,0 +1,41 @@
+{
+    "amount_due": 4900,
+    "amount_paid": 0,
+    "credits_applied": 0,
+    "currency_code": "USD",
+    "line_item_taxes": [],
+    "line_items": [{
+      "amount": 4900,
+      "date_from": 1473664975,
+      "date_to": 1476256975,
+      "description": "Plan - Hustle",
+      "discount_amount": 0,
+      "entity_id": "cbdemo_hustle",
+      "entity_type": "plan",
+      "id": "li_2rprAVlOPvFYhAkiYF",
+      "is_taxed": false,
+      "item_level_discount_amount": 0,
+      "object": "line_item",
+      "quantity": 1,
+      "tax_amount": 0,
+      "unit_amount": 4900
+    }],
+    "object": "invoice_estimate",
+    "price_type": "tax_exclusive",
+    "recurring": true,
+    "sub_total": 4900,
+    "taxes": [],
+    "total": 4900
+  }
+amount_due
+amount_paid
+credits_applied
+currency_code
+line_item_taxes
+line_items
+object
+price_type
+recurring
+sub_total
+taxes
+total

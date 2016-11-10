@@ -1,0 +1,14 @@
+{
+    "applied_amount": 11900,
+    "applied_at": 1463055077,
+    "invoice_date": 1463055076,
+    "invoice_id": "DemoInv_101",
+    "invoice_status": "paid",
+    "invoice_total": 11900
+}
+applied_amount
+applied_at
+invoice_date
+invoice_id
+invoice_status
+invoice_total

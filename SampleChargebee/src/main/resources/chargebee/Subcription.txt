@@ -1,0 +1,36 @@
+{
+  "activated_at": 1446466268,
+  "created_at": 1445256668,
+  "currency_code": "USD",
+  "current_term_end": 1478002268,
+  "current_term_start": 1462104668,
+  "customer_id": "cbdemo_sir",
+  "due_invoices_count": 0,
+  "has_scheduled_changes": false,
+  "id": "cbdemo_sir-sub",
+  "object": "subscription",
+  "plan_id": "cbdemo_scale",
+  "plan_quantity": 1,
+  "po_number": "SIR001",
+  "started_at": 1445256668,
+  "status": "active",
+  "trial_end": 1446466268,
+  "trial_start": 1445256668
+}
+activated_at
+created_at
+currency_code
+current_term_end
+current_term_start
+customer_id
+due_invoices_count
+has_scheduled_changes
+id
+object
+plan_id
+plan_quantity
+po_number
+started_at
+status
+trial_end
+trial_start

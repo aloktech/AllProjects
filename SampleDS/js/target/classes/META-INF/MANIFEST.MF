@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1464180641427
+Build-Jdk: 1.8.0_72-ea
+Built-By: INVCH018
+Bundle-ManifestVersion: 2
+Bundle-Name: SampleDS JavaScript Libraries
+Bundle-SymbolicName: com.imos.sample.SampleDS.js
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.imos.sample.SampleDS.js;version="1.0.0.SNAPSHOT"
+Import-Package: org.netbeans.html.boot.spi;version="[1.3,2)"
+Tool: Bnd-2.1.0.20130426-122213

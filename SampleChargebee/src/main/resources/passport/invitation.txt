@@ -1,0 +1,15 @@
+account_id
+code
+context
+created_at
+created_by
+created_by_name
+email
+expires
+id
+inviter_id
+message
+roles
+updated_at
+updated_by
+updated_by_name

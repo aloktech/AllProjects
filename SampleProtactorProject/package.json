@@ -1,0 +1,15 @@
+{
+  "name": "sampleProtactorProject",
+  "version": "1.0.0",
+  "description": "Sample Protactor Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "protractor-html-screenshot-reporter": "0.0.21",
+    "protractor-jasmine2-html-reporter": "0.0.6"
+  }
+}

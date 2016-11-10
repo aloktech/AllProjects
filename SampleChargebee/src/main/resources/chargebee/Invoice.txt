@@ -1,0 +1,79 @@
+{
+  "adjustment_credit_notes": [],
+  "amount_adjusted": 0,
+  "amount_due": 0,
+  "amount_paid": 1000,
+  "applied_credits": [],
+  "billing_address": {
+    "company": "Acme Inc.",
+    "first_name": "John",
+    "last_name": "William",
+    "object": "billing_address",
+    "validation_status": "not_validated"
+  },
+  "credits_applied": 0,
+  "currency_code": "USD",
+  "customer_id": "cbdemo_john",
+  "date": 1471517199,
+  "first_invoice": true,
+  "id": "1",
+  "issued_credit_notes": [],
+  "line_items": [{
+    "amount": 1000,
+    "date_from": 1471517199,
+    "date_to": 1471517199,
+    "description": "Support charge",
+    "discount_amount": 0,
+    "entity_type": "adhoc",
+    "id": "li_1mxK5qKPuE4CkV3I5V",
+    "is_taxed": false,
+    "item_level_discount_amount": 0,
+    "object": "line_item",
+    "quantity": 1,
+    "tax_amount": 0,
+    "unit_amount": 1000
+  }],
+  "linked_orders": [],
+  "linked_payments": [{
+    "applied_amount": 1000,
+    "applied_at": 1471517199,
+    "txn_amount": 1000,
+    "txn_date": 1471517199,
+    "txn_id": "txn_1mxK5qKPuE4Cks3I5W",
+    "txn_status": "success"
+  }],
+  "object": "invoice",
+  "paid_at": 1471517199,
+  "price_type": "tax_exclusive",
+  "recurring": false,
+  "status": "paid",
+  "sub_total": 1000,
+  "tax": 0,
+  "total": 1000,
+  "write_off_amount": 0
+}
+adjustment_credit_notes
+amount_adjusted
+amount_due
+amount_paid
+applied_credits
+billing_address
+credits_applied
+currency_code
+customer_id
+date
+first_invoice
+id
+issued_credit_notes
+line_items
+linked_orders
+linked_payments
+object
+paid_at
+price_type
+recurring
+status
+sub_total
+tax
+total
+write_off_amount
