@@ -20,6 +20,8 @@
         <module>SampleWeld</module>
         <module>SampleWebApp</module>
         <module>SampleJavaFX</module>
+        <module>SampleGithub</module>
+        <module>SampleShiro</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

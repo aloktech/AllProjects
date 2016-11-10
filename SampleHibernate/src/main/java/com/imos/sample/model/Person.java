@@ -56,9 +56,5 @@ public class Person implements Serializable {
 //    private Set<Address> addresses = new HashSet<>();
     
     @ManyToOne
-    private Address conrrespondenceAddress;
-    
-    @ManyToOne
-    private Address officeAddress;
-    
+    private Address address;
 }
