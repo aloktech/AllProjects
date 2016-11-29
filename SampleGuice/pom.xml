@@ -1,15 +1,47 @@
-: Продолжить знакомство
-Description-si.utf-8: පරීක්ෂා කිරීම කරගෙන යන්න
-Description-sk.utf-8: Pokračovať v testovaní
-Description-sl.utf-8: Nadaljuj s preizkušanjem
-Description-sq.utf-8: Vazhdoni Testimin
-Description-sr.utf-8: Настави тестирање
-Description-sv.utf-8: Fortsätt att testa
-Description-ta.utf-8: ெதாடா்ந்து சாிபாா்
-Description-ta_lk.utf-8: ெதாடா்ந்து சாிபாா்
-Description-te.utf-8: పరీక్షని కొనసాగించు
-Description-th.utf-8: ทดลองใช้งานต่อไป
-Description-tr.utf-8: Sınamayı Sürdür
-Description-ug.utf-8: سىناشنى داۋاملاشتۇر
-Description-uk.utf-8: Продовжити знайомство
-Description-vi.utf-8: Tiếp tục chạy th�
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.imos.sample</groupId>
+    <artifactId>SampleGuice</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.193</version>
+        </dependency>
+    </dependencies>
+    <name>SampleGuice</name>
+</project>

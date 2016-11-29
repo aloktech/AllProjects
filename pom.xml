@@ -12,16 +12,14 @@
         <module>SampleNashorn</module>
         <module>SampleS3</module>
         <module>SampleChargebee</module>
-        <module>SampleDagger</module>
-        <module>SampleGuice</module>
         <module>SampleHibernate</module>
         <module>SampleSpark</module>
-        <module>SampleSpikeProject</module>
         <module>SampleWeld</module>
         <module>SampleWebApp</module>
         <module>SampleJavaFX</module>
         <module>SampleGithub</module>
         <module>SampleShiro</module>
+        <module>../../LearningWorkspace/SampleShiroInJDBC</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
