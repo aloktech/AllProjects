@@ -19,7 +19,7 @@
         <module>SampleJavaFX</module>
         <module>SampleGithub</module>
         <module>SampleShiro</module>
-        <module>../../LearningWorkspace/SampleShiroInJDBC</module>
+        <module>SampleShiroInJDBC</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,8 +1,0 @@
-com\imos\sample\ESRepository.class
-com\imos\sample\AnalysisData.class
-com\imos\sample\AnalysisInfo.class
-com\imos\sample\ESConstant.class
-com\imos\sample\Article.class
-com\imos\sample\SampleElasticSearch.class
-com\imos\sample\InvalidJSONDataException.class
-com\imos\sample\SampleAnalysis.class
