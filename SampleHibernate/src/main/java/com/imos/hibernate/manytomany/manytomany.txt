@@ -1,0 +1,33 @@
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into UserDetailMTM (name, id) values (?, ?)
+Hibernate: insert into UserDetailMTM (name, id) values (?, ?)
+Hibernate: insert into VehicleMTM (name, id) values (?, ?)
+Hibernate: insert into VehicleMTM (name, id) values (?, ?)
+Hibernate: insert into VehicleMTM (name, id) values (?, ?)
+Hibernate: insert into VehicleMTM (name, id) values (?, ?)
+Hibernate: insert into USERS_VEHICLES (USER_ID, VECHICLE_ID) values (?, ?)
+Hibernate: insert into USERS_VEHICLES (USER_ID, VECHICLE_ID) values (?, ?)
+Hibernate: insert into USERS_VEHICLES (USER_ID, VECHICLE_ID) values (?, ?)
+Hibernate: insert into USERS_VEHICLES (USER_ID, VECHICLE_ID) values (?, ?)
+Hibernate: insert into VEHICLES_USERS (VECHICLE_ID, USER_ID) values (?, ?)
+Hibernate: insert into VEHICLES_USERS (VECHICLE_ID, USER_ID) values (?, ?)
+Hibernate: insert into VEHICLES_USERS (VECHICLE_ID, USER_ID) values (?, ?)
+Hibernate: insert into VEHICLES_USERS (VECHICLE_ID, USER_ID) values (?, ?)
+Jul 30, 2016 7:38:29 PM com.imos.hibernate.utils.HibernateUtils save
+INFO: SAVE Successfull
+Hibernate: select userdetail0_.id as id1_1_, userdetail0_.name as name2_1_ from UserDetailMTM userdetail0_
+Hibernate: select vehicles0_.USER_ID as USER_ID1_4_0_, vehicles0_.VECHICLE_ID as VECHICLE2_4_0_, vehiclemtm1_.id as id1_5_1_, vehiclemtm1_.name as name2_5_1_ from USERS_VEHICLES vehicles0_ inner join VehicleMTM vehiclemtm1_ on vehicles0_.VECHICLE_ID=vehiclemtm1_.id where vehicles0_.USER_ID=?
+Alok [VehicleMTM(name=Car A), VehicleMTM(name=Car B)]
+Hibernate: select vehicles0_.USER_ID as USER_ID1_4_0_, vehicles0_.VECHICLE_ID as VECHICLE2_4_0_, vehiclemtm1_.id as id1_5_1_, vehiclemtm1_.name as name2_5_1_ from USERS_VEHICLES vehicles0_ inner join VehicleMTM vehiclemtm1_ on vehicles0_.VECHICLE_ID=vehiclemtm1_.id where vehicles0_.USER_ID=?
+Alok [VehicleMTM(name=Car A), VehicleMTM(name=Car B)]

@@ -17,3 +17,8 @@ hs_err_pid*
 /SampleSpikeProject/target/
 /SampleShiro/target/
 /SampleWebApp/target/
+/SampleRESTService/target/
+/SampleGroovyProject/build/
+/SampleGroovyProject/nbproject/private/
+/SamplePrimeFacesProject/build/
+/SamplePrimeFacesProject/nbproject/private/

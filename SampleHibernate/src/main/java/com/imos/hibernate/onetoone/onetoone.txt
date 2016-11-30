@@ -1,0 +1,39 @@
+Hibernate: create table hibernate_sequence (next_val bigint)
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: create table USER_VEHICLES (USER_ID bigint not null, VECHICLE_ID bigint not null)
+Hibernate: create table UserDetailMTM (id bigint not null, name varchar(255), primary key (id))
+Hibernate: create table UserDetailOTM (id bigint not null, name varchar(255), primary key (id))
+Hibernate: create table UserDetailOTO (id bigint not null, name varchar(255), VEHICLE_ID bigint, primary key (id))
+Hibernate: create table USERS_VEHICLES (USER_ID bigint not null, VECHICLE_ID bigint not null)
+Hibernate: create table VehicleMTM (id bigint not null, name varchar(255), primary key (id))
+Hibernate: create table VehicleOTM (id bigint not null, name varchar(255), USER_ID bigint, primary key (id))
+Hibernate: create table VehicleOTO (id bigint not null, name varchar(255), owner_id bigint, primary key (id))
+Hibernate: create table VEHICLES_USERS (VECHICLE_ID bigint not null, USER_ID bigint not null)
+Hibernate: alter table USER_VEHICLES drop constraint UK_p7vve1tjo2jnawj04r5apgthg
+Hibernate: alter table USER_VEHICLES add constraint UK_p7vve1tjo2jnawj04r5apgthg unique (VECHICLE_ID)
+Hibernate: alter table USER_VEHICLES add constraint FK6to0e0dx0vcawiahoffk3dc0b foreign key (VECHICLE_ID) references VehicleOTM (id)
+Hibernate: alter table USER_VEHICLES add constraint FKhxfrnpyp4tg2h34dmyar3sm5e foreign key (USER_ID) references UserDetailOTM (id)
+Hibernate: alter table UserDetailOTO add constraint FKaa0m6p7lkdvxbsqq7tpc88pek foreign key (VEHICLE_ID) references VehicleOTO (id)
+Hibernate: alter table USERS_VEHICLES add constraint FKojfg9267tuscuxhbwx79m87bw foreign key (VECHICLE_ID) references VehicleMTM (id)
+Hibernate: alter table USERS_VEHICLES add constraint FK622msqdesn4t3gacyvhl4bxlw foreign key (USER_ID) references UserDetailMTM (id)
+Hibernate: alter table VehicleOTM add constraint FKaqjnbqx6lu0e7b6nqe8hm76i8 foreign key (USER_ID) references UserDetailOTM (id)
+Hibernate: alter table VehicleOTO add constraint FKhdihaf8twtch9h9tcp59hkbu5 foreign key (owner_id) references UserDetailOTO (id)
+Hibernate: alter table VEHICLES_USERS add constraint FK7gmhm61x3ragsix3mt9tnhfva foreign key (USER_ID) references UserDetailMTM (id)
+Hibernate: alter table VEHICLES_USERS add constraint FKf3d5vfbr7vfb3lsqsfw5p090l foreign key (VECHICLE_ID) references VehicleMTM (id)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into UserDetailOTO (name, VEHICLE_ID, id) values (?, ?, ?)
+Hibernate: insert into VehicleOTO (name, owner_id, id) values (?, ?, ?)
+Hibernate: update UserDetailOTO set name=?, VEHICLE_ID=? where id=?
+Jul 30, 2016 7:37:02 PM com.imos.hibernate.utils.HibernateUtils save
+INFO: SAVE Successfull
+Hibernate: select userdetail0_.id as id1_3_, userdetail0_.name as name2_3_, userdetail0_.VEHICLE_ID as VEHICLE_3_3_ from UserDetailOTO userdetail0_
+Hibernate: select vehicleoto0_.id as id1_7_0_, vehicleoto0_.name as name2_7_0_, vehicleoto0_.owner_id as owner_id3_7_0_, userdetail1_.id as id1_3_1_, userdetail1_.name as name2_3_1_, userdetail1_.VEHICLE_ID as VEHICLE_3_3_1_ from VehicleOTO vehicleoto0_ left outer join UserDetailOTO userdetail1_ on vehicleoto0_.owner_id=userdetail1_.id where vehicleoto0_.id=?
+UserDetailOTO(name=Alok, vehicle=VehicleOTO(name=Car))

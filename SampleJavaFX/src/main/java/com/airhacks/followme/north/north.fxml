@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="54.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.north.NorthPresenter">
+    <stylesheets>
+        <URL value="@north.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="ok" layoutX="237.0" layoutY="14.0" mnemonicParsing="false" onAction="#show" text="Button" />
+   </children>
+</AnchorPane>

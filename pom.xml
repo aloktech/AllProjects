@@ -7,19 +7,31 @@
     <packaging>pom</packaging>
     <modules>
         <module>BasicOfJava</module>
+        <module>SampleCDI</module>
+        <module>SampleChargebee</module>
+        <module>SampleDynamoDB</module>
         <module>SampleElasticSearch</module>
+        <module>SampleFileManagement</module>
+        <module>SampleGithub</module>
+        <module>SampleGoogleProducts</module>
+        <module>SampleHazelcast</module>
+        <module>SampleHibernate</module>
+         <module>SampleJavaFX</module>
+         <module>SampleJDeferred</module>
+         <module>SampleJettyServer</module>
+        <module>SampleJSON</module>
         <module>SampleJUnit5</module>
+        <module>SampleMbassador</module>
+        <module>SampleMongoDB</module>
         <module>SampleNashorn</module>
         <module>SampleS3</module>
-        <module>SampleChargebee</module>
-        <module>SampleHibernate</module>
-        <module>SampleSpark</module>
-        <module>SampleWeld</module>
-        <module>SampleWebApp</module>
-        <module>SampleJavaFX</module>
-        <module>SampleGithub</module>
         <module>SampleShiro</module>
         <module>SampleShiroInJDBC</module>
+        <module>SampleSpark</module>
+        <module>SampleThread</module>
+        <module>SampleWebApp</module>
+        <module>SampleWeld</module>
+        <module>SampleVaadinProject</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

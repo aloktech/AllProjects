@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <!--<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sampledb?zeroDateTimeBehavior=convertToNull;autoReconnect=true;useSSL=false</property>-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sampledb?useSSL=false</property>
+        <!--<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sampledb</property>-->
+        <!--<property name="hibernate.connection.url">jdbc:mysql://192.168.1.34:3306/learning_hibernate?zeroDateTimeBehavior=convertToNull</property>-->
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">@pintuch</property>
+        <!--<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>-->
+        <property name="show_sql">true</property>
+        <!--<property name="hbm2ddl.auto">create</property>-->
+        <property name="hbm2ddl.auto">update</property>
+        <property name=" hibernate.generate_statistics">false</property>
+        <property name="hibernate.use_sql_comments">false</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    
+<!--        <mapping class="com.imos.hibernate.dto.BaseObject" />
+        <mapping class="com.imos.hibernate.dto.PersonDetails" />
+        <mapping class="com.imos.hibernate.dto.Company" />
+        <mapping class="com.imos.hibernate.dto.Vehicle" />
+        <mapping class="com.imos.hibernate.dto.CommunityCenter" />-->
+        <mapping class="com.imos.hibernate.onetoone.UserDetailOTO" />
+        <mapping class="com.imos.hibernate.onetoone.VehicleOTO" />
+        <mapping class="com.imos.hibernate.onetomany.UserDetailOTM" />
+        <mapping class="com.imos.hibernate.onetomany.VehicleOTM" />
+        <mapping class="com.imos.hibernate.manytomany.UserDetailMTM" />
+        <mapping class="com.imos.hibernate.manytomany.VehicleMTM" />
+    </session-factory>
+<!--    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sampledb?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
+    
+        <mapping class="com.imos.hibernate.dto.BaseObject" />
+        <mapping class="com.imos.hibernate.dto.PersonDetails" />
+        <mapping class="com.imos.hibernate.dto.Company" />
+        <mapping class="com.imos.hibernate.dto.Vehicle" />
+        <mapping class="com.imos.hibernate.dto.CommunityCenter" />
+    </session-factory>-->
+</hibernate-configuration>
