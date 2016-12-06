@@ -25,8 +25,7 @@ public enum JdbcService {
 
     INSTANCE;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(JdbcService.class
-            .getSimpleName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(JdbcService.class);
 
     private final ExceptionFunction<PreparedStatement, SQLException> execute = p -> {
         return p.execute();
@@ -40,31 +39,29 @@ public enum JdbcService {
 
     @Getter
     private static long index;
+
     @Getter
     private static DatabaseInfo databaseInfo;
 
     private static LogService log;
+
     private static Connection connection;
+
     private static final String URL = "%s:%s://%s:%d/%s?%s";
 
-    public static JdbcService getInstance(DatabaseInfo databaseInfo) {
-        init(databaseInfo);
-        return INSTANCE;
-    }
+    public void configure(DatabaseInfo pDatabaseInfo) {
+        databaseInfo = pDatabaseInfo;
 
-    private static void init(DatabaseInfo databaseInfo1) {
-        databaseInfo = databaseInfo1;
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
-                .eventType(EventType.CONFIGURATION)
-                .parameters(new ArrayList<>())
+                .eventType(EventType.JDBC_CONFIGURATION)
                 .build();
+
         try {
-            Class.forName(databaseInfo1.getDriver());
-            connection = DriverManager.getConnection(getURL(), databaseInfo1.getUserName(), databaseInfo1.getPassword());
+            Class.forName(pDatabaseInfo.getDriver());
+
+            connection = DriverManager.getConnection(getURL(), pDatabaseInfo.getUserName(), pDatabaseInfo.getPassword());
+
             log.setLogType(LogType.INFO);
         } catch (ExceptionInInitializerError e) {
             setLogError(log, e);
@@ -75,14 +72,10 @@ public enum JdbcService {
         }
     }
 
-    private void openConnection() {
+    public void openConnection() {
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.OPEN_CONNECTION)
-                .parameters(new ArrayList<>())
                 .build();
 
         try {
@@ -91,7 +84,6 @@ public enum JdbcService {
                 connection = DriverManager.getConnection(getURL(),
                         databaseInfo.getUserName(),
                         databaseInfo.getPassword());
-
             }
             log.setLogType(LogType.INFO);
         } catch (SQLTimeoutException e) {
@@ -103,29 +95,21 @@ public enum JdbcService {
         }
     }
 
-    public void execute(String queryStr, List<ParameterPair> parameters) {
+    public Object execute(String queryStr, List<ParameterPair> parameters) {
 
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
-                .eventType(EventType.ADD)
-                .parameters(new ArrayList<>())
+                .eventType(EventType.EXECUTE)
                 .build();
 
-        executeTryAndCatch(execute, queryStr, parameters, log);
+        return executeTryAndCatch(execute, queryStr, parameters, log);
     }
 
     public void add(String queryStr, List<ParameterPair> parameters) {
 
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.ADD)
-                .parameters(new ArrayList<>())
                 .build();
 
         executeTryAndCatch(execute, queryStr, parameters, log);
@@ -135,11 +119,7 @@ public enum JdbcService {
 
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.GET)
-                .parameters(new ArrayList<>())
                 .build();
 
         return executeTryAndCatch(executeQuery, queryStr, parameter, dataTypes, log);
@@ -149,11 +129,7 @@ public enum JdbcService {
 
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.DELETE)
-                .parameters(new ArrayList<>())
                 .build();
 
         executeTryAndCatch(execute, queryStr, parameter, log);
@@ -163,11 +139,7 @@ public enum JdbcService {
 
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.UPDATE)
-                .parameters(new ArrayList<>())
                 .build();
 
         executeTryAndCatch(executeUpdate, queryStr, parameter, log);
@@ -215,26 +187,30 @@ public enum JdbcService {
     }
 
     public long nextIndex() {
-        openConnection();
-        String query = String.format("SELECT id FROM %s.index_sequence", databaseInfo.getDatabaseName());
-        PreparedStatement ps = null;
-        try {
-            ResultSet rs = connection.createStatement().executeQuery(query);
-            while (rs.next()) {
-                index = rs.getLong("id");
+        log = new LogService.LogServiceBuilder()
+                .logger(LOGGER)
+                .eventType(EventType.INDEX_INCREMENT)
+                .build();
+
+        try (ResultSet resultSet = connection.createStatement().executeQuery("SELECT next_val FROM index_sequence")) {
+            while (resultSet.next()) {
+                index = resultSet.getLong("next_val");
                 break;
             }
             index = index == 0 ? 1 : index;
-            query = "UPDATE index_sequence SET id=?";
-            ps = connection.prepareStatement(query);
-            ps.setLong(1, index + 1);
-            ps.execute();
-
+            log.setLogType(LogType.INFO);
         } catch (SQLException ex) {
-            LoggerFactory.getLogger(JdbcService.class).error(ex.getMessage());
+            setLogError(log, ex);
+        }
+
+        try (PreparedStatement prepareStatement = connection.prepareStatement("UPDATE index_sequence SET next_val = ?")) {
+            prepareStatement.setLong(1, index + 1);
+            prepareStatement.execute();
+            log.setLogType(LogType.INFO);
+        } catch (SQLException ex) {
+            setLogError(log, ex);
         } finally {
-            closePrepareStatement(ps);
-            closeConnection();
+            log.execute();
         }
         return index;
     }
@@ -244,30 +220,28 @@ public enum JdbcService {
     }
 
     private Object executeTryAndCatch(ExceptionFunction<PreparedStatement, SQLException> function, String statement, List<ParameterPair> parameters, List<DataType> dataTypes, LogService log) {
-        PreparedStatement ps = null;
-        try {
-            openConnection();
-            ps = connection.prepareStatement(statement);
-            for (int pIndex = 1, size = parameters.size(); pIndex <= size; pIndex++) {
-                setParameters(ps, pIndex, parameters.get(pIndex - 1));
-            }
-            Object result = function.accept(ps);
+        try (PreparedStatement prepareStatement = connection.prepareStatement(statement)) {
 
-            List<List<Object>> data = new ArrayList<>();
+            for (int pIndex = 1, size = parameters.size(); pIndex <= size; pIndex++) {
+                setParameters(prepareStatement, pIndex, parameters.get(pIndex - 1));
+            }
+            Object result = function.accept(prepareStatement);
+
+            List<List<Object>> dataList = new ArrayList<>();
             if (result instanceof ResultSet) {
-                try (ResultSet rs = (ResultSet) function.accept(ps)) {
-                    while (rs.next()) {
+                try (ResultSet resultSet = (ResultSet) function.accept(prepareStatement)) {
+                    while (resultSet.next()) {
                         List<Object> row = new ArrayList<>();
                         for (int pIndex = 1, size = dataTypes.size(); pIndex <= size; pIndex++) {
-                            row.add(getParameter(dataTypes.get(pIndex - 1), rs, pIndex));
+                            row.add(getParameter(dataTypes.get(pIndex - 1), resultSet, pIndex));
                         }
-                        data.add(row);
+                        dataList.add(row);
                     }
                 }
             }
             log.setLogType(LogType.INFO);
 
-            return data;
+            return dataList;
         } catch (SQLTimeoutException e) {
             doRollBack();
 
@@ -276,11 +250,12 @@ public enum JdbcService {
             doRollBack();
 
             setLogError(log, e);
+        } catch (Exception e) {
+            doRollBack();
+
+            setLogError(log, e);
         } finally {
             log.execute();
-
-            closePrepareStatement(ps);
-            closeConnection();
         }
         return null;
     }
@@ -293,49 +268,25 @@ public enum JdbcService {
     private void doRollBack() {
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.ROLLBACK)
-                .parameters(new ArrayList<>())
                 .build();
 
         try {
-            connection.rollback();
-            log.setLogType(LogType.INFO);
-        } catch (SQLException ex) {
-            setLogError(log, ex);
-        }
-    }
-
-    private void closePrepareStatement(PreparedStatement ps) {
-        log = new LogService.LogServiceBuilder()
-                .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
-                .eventType(EventType.CLOSE_PREPARESTATEMENT)
-                .parameters(new ArrayList<>())
-                .build();
-
-        try {
-            if (ps != null) {
-                ps.close();
+            if (connection != null) {
+                connection.rollback();
                 log.setLogType(LogType.INFO);
             }
         } catch (SQLException ex) {
             setLogError(log, ex);
+        } finally {
+            log.execute();
         }
     }
 
-    private void closeConnection() {
+    public void closeConnection() {
         log = new LogService.LogServiceBuilder()
                 .logger(LOGGER)
-                .infoMsg("{0}")
-                .warningMsg("{0}")
-                .errorMsg("{0} {1}")
                 .eventType(EventType.CLOSE_CONNECTION)
-                .parameters(new ArrayList<>())
                 .build();
 
         try {
@@ -351,21 +302,20 @@ public enum JdbcService {
     }
 
     private static String getURL() {
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(databaseInfo.getProtocol() == null ? "" : databaseInfo.getProtocol());
+        parameters.add(databaseInfo.getSubProtocol() == null ? "" : databaseInfo.getSubProtocol());
+        parameters.add(databaseInfo.getHost() == null ? "" : databaseInfo.getHost());
+        parameters.add(databaseInfo.getPort());
+        parameters.add(databaseInfo.getDatabaseName() == null ? "" : databaseInfo.getDatabaseName());
+
+        String urlStr;
         if (databaseInfo.getOptional() == null || databaseInfo.getOptional().isEmpty()) {
-            return String.format(URL.substring(0, URL.indexOf("?")),
-                    databaseInfo.getProtocol() == null ? "" : databaseInfo.getProtocol(),
-                    databaseInfo.getSubProtocol() == null ? "" : databaseInfo.getSubProtocol(),
-                    databaseInfo.getHost() == null ? "" : databaseInfo.getHost(),
-                    databaseInfo.getPort(),
-                    databaseInfo.getDatabaseName() == null ? "" : databaseInfo.getDatabaseName());
+            urlStr = URL.substring(0, URL.indexOf("?"));
         } else {
-            return String.format(URL,
-                    databaseInfo.getProtocol() == null ? "" : databaseInfo.getProtocol(),
-                    databaseInfo.getSubProtocol() == null ? "" : databaseInfo.getSubProtocol(),
-                    databaseInfo.getHost() == null ? "" : databaseInfo.getHost(),
-                    databaseInfo.getPort(),
-                    databaseInfo.getDatabaseName() == null ? "" : databaseInfo.getDatabaseName(),
-                    databaseInfo.getOptional() == null ? "" : databaseInfo.getOptional());
+            parameters.add(databaseInfo.getOptional());
+            urlStr = URL;
         }
+        return String.format(urlStr, parameters.toArray(new Object[0]));
     }
 }

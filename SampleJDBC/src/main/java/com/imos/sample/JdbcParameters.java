@@ -15,17 +15,11 @@ import lombok.Getter;
  */
 public class JdbcParameters {
 
-    private DataType dataType;
     @Getter
     private final List<ParameterPair> parameters = new ArrayList<>();
 
-    public JdbcParameters setValue(Object data) {
+    public JdbcParameters setDataTypeAndValue(DataType dataType, Object data) {
         parameters.add(new ParameterPair(dataType, data));
-        return this;
-    }
-
-    public JdbcParameters setDataType(DataType dt) {
-        this.dataType = dt;
         return this;
     }
 }

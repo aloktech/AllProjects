@@ -6,6 +6,7 @@
 package com.imos.sample;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
 import java.util.List;
 import lombok.Builder;
 import lombok.Getter;
@@ -36,19 +37,26 @@ public class LogService {
                 logger.info(MessageFormat.format(infoMsg, parameters.toArray(new Object[0])));
                 break;
             case WARNING:
-                logger.warn(MessageFormat.format(infoMsg, parameters.toArray(new Object[0])));
+                logger.warn(MessageFormat.format(warningMsg, parameters.toArray(new Object[0])));
                 break;
             case ERROR:
-                logger.error(MessageFormat.format(infoMsg, parameters.toArray(new Object[0])));
+                logger.error(MessageFormat.format(errorMsg, parameters.toArray(new Object[0])));
                 break;
             case NONE:
-                break;
             default:
                 throw new AssertionError(logType.name());
         }
     }
 
     public static class LogServiceBuilder {
+
+        private String infoMsg = "{0}";
+        private String errorMsg = "{0} {1}";
+        private String warningMsg = "{0}";
+        private Logger logger;
+        private LogType logType = LogType.NONE;
+        private EventType eventType = EventType.NONE;
+        private List<Object> parameters = new ArrayList<>();
 
         public LogServiceBuilder() {
         }
