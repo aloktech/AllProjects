@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.imos.sample;
 
 import java.sql.Connection;
@@ -25,7 +20,7 @@ public enum JdbcService {
 
     INSTANCE;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(JdbcService.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(JdbcService.class);
 
     private final ExceptionFunction<PreparedStatement, SQLException> execute = p -> {
         return p.execute();
@@ -38,14 +33,14 @@ public enum JdbcService {
     };
 
     @Getter
-    private static long index;
+    private long index;
 
     @Getter
-    private static DatabaseInfo databaseInfo;
+    private DatabaseInfo databaseInfo;
 
-    private static LogService log;
+    private LogService log;
 
-    private static Connection connection;
+    private Connection connection;
 
     private static final String URL = "%s:%s://%s:%d/%s?%s";
 
@@ -301,7 +296,7 @@ public enum JdbcService {
         }
     }
 
-    private static String getURL() {
+    private String getURL() {
         List<Object> parameters = new ArrayList<>();
         parameters.add(databaseInfo.getProtocol() == null ? "" : databaseInfo.getProtocol());
         parameters.add(databaseInfo.getSubProtocol() == null ? "" : databaseInfo.getSubProtocol());

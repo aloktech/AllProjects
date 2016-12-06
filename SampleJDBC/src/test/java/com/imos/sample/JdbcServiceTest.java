@@ -7,11 +7,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author Pintu
@@ -37,6 +32,7 @@ public class JdbcServiceTest {
         parameterPairs.add(new ParameterPair(DataType.LONG, JdbcService.INSTANCE.nextIndex()));
         parameterPairs.add(new ParameterPair(DataType.STRING, "Pintu"));
         parameterPairs.add(new ParameterPair(DataType.INTEGER, 38));
+        
         JdbcService.INSTANCE.add("INSERT INTO user (id, name, age) VALUES(?, ?, ?)", parameterPairs);
     }
 

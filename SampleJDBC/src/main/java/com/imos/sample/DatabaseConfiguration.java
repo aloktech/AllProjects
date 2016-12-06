@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.imos.sample;
 
 import java.util.ResourceBundle;
@@ -20,6 +15,7 @@ public class DatabaseConfiguration {
     public static DatabaseInfo getDatabaseInfo(String fileName) {
         
         ResourceBundle bundle = ResourceBundle.getBundle(fileName);
+        
         DatabaseInfo databaseInfo = new DatabaseInfo();
         
         LogService logService = new LogService.LogServiceBuilder()
