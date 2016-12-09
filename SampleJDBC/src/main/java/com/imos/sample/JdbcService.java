@@ -155,7 +155,6 @@ public enum JdbcService {
                 case STRING:
                     ps.setString(index, ((String) pp.getData()));
                     break;
-
             }
         } catch (SQLException ex) {
             LoggerFactory.getLogger(JdbcService.class).error(ex.getMessage());
@@ -173,7 +172,6 @@ public enum JdbcService {
                     return rs.getDouble(index);
                 case STRING:
                     return rs.getString(index);
-
             }
         } catch (SQLException ex) {
             LoggerFactory.getLogger(JdbcService.class).error(ex.getMessage());

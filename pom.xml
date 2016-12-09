@@ -17,6 +17,7 @@
         <module>SampleHazelcast</module>
         <module>SampleHibernate</module>
          <module>SampleJavaFX</module>
+         <module>SampleJDBC</module>
          <module>SampleJDeferred</module>
          <module>SampleJettyServer</module>
         <module>SampleJSON</module>
