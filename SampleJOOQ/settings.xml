@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <servers>
+        <server>
+            <!-- By default Flyway will look for the server with the id 'flyway-db' -->
+            <!-- This can be customized by configuring the 'serverId' property -->
+            <id>flyway-db</id>
+            <username>root</username>
+            <password>admin235+</password>
+        </server>
+    </servers>
+</settings>
