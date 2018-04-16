@@ -1,0 +1,40 @@
+#bigDecimalTest :
+from Person p 
+where p.id = 
+1.00 
+
+#longTest :
+from Person p 
+where p.id = 
+1 
+
+#bigIntegerTest :
+from Person p 
+where p.id = 
+1 
+
+#floatTest :
+from Person p 
+where p.id = 
+1.0 
+
+#sqlTest :
+select * 
+from person p 
+order by p.pd_id.first_name 
+
+#doubleTest :
+from Person p 
+where p.id = 
+1.0 
+
+#intTest :
+from Person p 
+where p.id = 
+1 
+
+#stringTest :
+from Person p 
+where p.id = 
+hello 
+

@@ -1,0 +1,27 @@
+{
+    "version" : 1,
+    "databases" : [
+        {
+            "name" : "Admin",
+            "databaseType" : "Mysql",
+            "driver" : "",
+            "url" : "",
+            "user" : "",
+            "password" : ""
+        },{
+            "name" : "Finance",
+            "databaseType" : "Mysql",
+            "driver" : "",
+            "url" : "",
+            "user" : "",
+            "password" : ""
+        },{
+            "name" : "HR",
+            "databaseType" : "Mysql",
+            "driver" : "",
+            "url" : "",
+            "user" : "",
+            "password" : ""
+        }
+    ]
+}
