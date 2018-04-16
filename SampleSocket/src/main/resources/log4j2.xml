@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" monitorInterval="30" >
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%d [%t] %-5level %logger{36} %L - %msg%n%throwable"/>
+        </Console>
+        <!--        <NoSql name="databaseAppender">
+            <CouchDb databaseName="logdb" protocol="http" server="localhost" port="5984"
+                     username="admin" password="admin" />
+        </NoSql>-->
+        <NoSql name="databaseAppender">
+            <MongoDb databaseName="loggingdb" collectionName="loggings" server="localhost"/>
+        </NoSql>
+    </Appenders>
+    <Loggers>
+        <!--        <Logger name="FAIL_OVER_SYSLOG_APPENDER"
+                level="INFO"
+                additivity="false">
+            <AppenderRef ref="FailoverAppender" />
+        </Logger>-->
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="databaseAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
